@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <unistd.h>
 
 /**
  * main - Entry point
@@ -11,7 +12,7 @@ int main(void)
 {
 	int x;
 
-	while (x = '0'; x < 10; x++)
+	for (x = 0; x < 10; x++)
 	{
 		printf("%d\n", x);
 	}
