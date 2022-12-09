@@ -14,7 +14,7 @@ int main(void)
 
 	for (x = 0; x < 8; x++)
 	{
-		for (y = x +1; y < 9; y++)
+		for (y = x + 1; y < 9; y++)
 		{
 			for (z = y + 1; z < 10; z++)
 			{
