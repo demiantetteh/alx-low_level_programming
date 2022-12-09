@@ -2,7 +2,9 @@
 #include <unistd.h>
 
 /**
- * Description - Printing numbers from 0 to 9 using putchar
+ * main - Entry point
+ *
+ * Return: Always 0 (successful)
  */
 int main(void)
 {
@@ -12,6 +14,5 @@ int main(void)
 	{
 		putchar(x);
 	}
-	putchar('\n');
 	return (0);
 }
