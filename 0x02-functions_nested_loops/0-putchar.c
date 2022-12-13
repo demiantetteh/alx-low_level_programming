@@ -3,22 +3,22 @@
 /**
  * main - Entry point
  *
- * Description - prints the word _putchar \n
+ * Description - Prints out putchar \n
  *
  * Return - Always 0 (success)
  */
 
 int main(void)
 {
-	char word[] = "_putchar \n";
-	int i = 0;
+	_putchar('_');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
+	_putchar('\n');
 
-	while(word[i] != '\0')
-	{
-		char c = word[i];
-
-		_putchar(c);
-		i++;
-	}
 	return (0);
 }
