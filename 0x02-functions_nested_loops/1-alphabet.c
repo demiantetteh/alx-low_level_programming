@@ -3,7 +3,7 @@
 /**
  * print_alpahabet - Entry point
  *
- * Description - Prints alphabets in lowercase, followed by a new line
+ * Description: Prints alphabets in lowercase, followed by a new line
  * Return: void
  */
 
