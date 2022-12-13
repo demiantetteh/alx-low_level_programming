@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_alpahabet - entry point
+ * print_alpahabet - prints alpahabets in lowercase, followed by a new line
  *
  * Return: void
  */
