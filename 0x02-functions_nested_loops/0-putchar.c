@@ -13,11 +13,11 @@ int main(void)
 	char word[] = "_putchar \n";
 	int i = 0;
 
-	while(int i != 0)
+	while(word[i] != '\0')
 	{
 		char c = word[i];
 
-		_putchar.c;
+		_putchar(c);
 		i++;
 	}
 	return (0);
