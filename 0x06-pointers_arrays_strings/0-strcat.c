@@ -3,8 +3,8 @@
 
 /**
  * *_strcat - appends @src to @dest
- * @src - variable to be appended from
- * @dest - variable to be appended to
+ * @src:  variable to be appended from
+ * @dest:  variable to be appended to
  * Return: dest (success)
  */
 
