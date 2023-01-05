@@ -10,7 +10,7 @@
 
 int is_prime_number(int n)
 {
-	while ((n / 1 = n) || (n / n = 1))
+	while ((n / 1 == n) || (n / n == 1))
 	{
 		return (1);
 		n++;
