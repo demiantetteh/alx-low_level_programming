@@ -1,6 +1,6 @@
 #include "main.h"
 #include <stdio.h>
-#include <stlib>
+#include <stdlib.h>
 
 /**
  * main - multiplies two numbers from console in atoi form
