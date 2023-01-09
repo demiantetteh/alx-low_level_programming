@@ -1,14 +1,15 @@
 #include "main.h"
 #include <stdio.h>
-#include <stdlib.h>
+#include <string.h>
+#include <ctype.h>
 
 /**
- * main - adds positive numbers and prints them
- * @argc: The count of arguments passed
- * @argv: The arguments passed
+ * main - Prints the addition of positive numbers
+ * @argc: The number of arguments passed to the program
+ * @argv: Arguments entered on the console
  *
- * Return: 1 if numbers contains symbols that are non digits
- *		0 -if otherwise
+ * Return: 1 if the numbers contain symbols that are non-digits
+ *		else 0.
  */
 
 int main(int argc, char *argv[])
@@ -19,22 +20,22 @@ int main(int argc, char *argv[])
 		return (0);
 	}
 
-	int n1, n2, sum = 0;
+	int sum = 0;
+	int i, j;
 
-	for (n1 = 1; n1 < argc; n1++)
+	for (i = 1; i < argc; i++)
 	{
-		for (n2 = 0; argv[n1][n2]; n2++)
+		for (j = 0; j < strlen(argv[i]); j++)
 		{
-			if (argv[n1][n2] < '0' || argv[n1][n2] > '9')
+			if (!isdigit(argv[i][j]))
 			{
 				printf("Error\n");
-				return (1);
+				return 1;
 			}
 		}
-		sum += atoi(argv[n1]);
+
+		sum += atoi(argv[i]);
 	}
-
-	printf("%d", sum);
-
+	printf("%d\n", sum);
 	return (0);
 }
