@@ -10,7 +10,7 @@
  *		1 if argc is less than 3
  */
 
-int main(int agrc, char *argv[])
+int main(int argc, char *argv[])
 {
 	int n1, n2, product;
 
