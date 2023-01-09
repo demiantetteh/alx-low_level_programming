@@ -10,7 +10,7 @@
  *		1 if argc is less than 3
  */
 
-int main(int agrc, char *argc[])
+int main(int agrc, char *argv[])
 {
 	int n1, n2, product;
 
@@ -20,7 +20,6 @@ int main(int agrc, char *argc[])
 
 		return (1);
 	}
-	
 	else
 	{
 		n1 = atoi(argv[1]);
