@@ -15,28 +15,34 @@
 
 int main(int argc, char *argv[])
 {
-	if (argc == 1)
-	{
+	int u, j, length, sum;
+	char *ptr;
+
+	if (argc < 2)
 		printf("0\n");
-		return (0);
-	}
-
-	int sum = 0;
-	int i, j;
-
-	for (i = 1; i < argc; i++)
+	else
 	{
-		for (j = 0; j < strlen(argv[i]); j++)
+		sum = 0;
+		
+		for (i = 1; i < argc; i++)
 		{
-			if (!isdigit(argv[i][j]))
+			ptr = argv[i];
+			length = strlen(ptr);
+
+			for (j = 0; j < length; j++)
 			{
-				printf("Error\n");
-				return (1);
+				if (isdigit(*(ptr +j)) == 0)
+				{
+					printf("Error\n");
+					return (1);
+				}
 			}
+
+			sum += atoi(argv[i]);
 		}
 
-		sum += atoi(argv[i]);
+		printf("%d\n", sum);
+
 	}
-	printf("%d\n", sum);
 	return (0);
 }
