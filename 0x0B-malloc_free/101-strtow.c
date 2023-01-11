@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "main.h"
-
+#include <string.h>
 /**
  * strtow - splits a string into words
  * @str: the string to be used
@@ -26,7 +26,7 @@ char **strtow(char *str)
 
 	while (token != NULL)
 	{
-		result = realloc(result, sizof(char *) * (count + 1));
+		result = realloc(result, sizeof(char *) * (count + 1));
 		result[count] = token;
 		count++;
 		token = strtok(NULL, " ");
