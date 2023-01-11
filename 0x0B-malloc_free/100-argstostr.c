@@ -1,6 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include "main.h"
+#include <string.h>
 
 /**
  * argstostr - concatenates all the arguments of your program
@@ -13,6 +14,7 @@
 char *argstostr(int ac, char **av)
 {
 	int i;
+	int j;
 	char *result;
 	int result_index;
 	int total_length;
@@ -31,7 +33,7 @@ char *argstostr(int ac, char **av)
 
 	for (i = 0; i < ac; i++)
 	{
-		for (int j = 0; av[i][j] != '\0'; j++)
+		for (j = 0; av[i][j] != '\0'; j++)
 		{
 			result[result_index] = av[i][j];
 			result_index++;
