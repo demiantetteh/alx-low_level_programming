@@ -24,7 +24,7 @@ char *create_array(unsigned int size, char c)
 
 	for (i = 0; i < (int) size; i++)
 	{
-		_putchar(c);
+		arr[i] = c;
 		i++;
 		free(arr);
 	}
