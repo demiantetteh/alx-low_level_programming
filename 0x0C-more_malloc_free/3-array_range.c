@@ -19,12 +19,12 @@ int *array_range(int min, int max)
 		return (NULL);
 
 	arrsize = max - min + 1;
-	
-	s = mallac(size * sizeof(int));
+
+	s = malloc(arrsize * sizeof(int));
 
 	if (s == NULL)
 		return (NULL);
-	for (i = 0; i < size; i++)
+	for (i = 0; i < arrsize; i++)
 		s[i] = min++;
 
 	return (s);
