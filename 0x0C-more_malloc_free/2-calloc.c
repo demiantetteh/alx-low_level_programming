@@ -15,7 +15,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	void *s;
 	char *t;
-	int i;
+	unsigned int i;
 
 	s = malloc(nmemb * size);
 
