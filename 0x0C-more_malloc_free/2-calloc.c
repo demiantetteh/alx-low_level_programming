@@ -15,12 +15,14 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	void *s;
 
-	s = calloc(nmemb, size);
+	s = malloc(nmemb * size);
 
 	if (size == 0 || nmemb == 0)
 		return (NULL);
 	if (s == NULL)
 		return (NULL);
+
+	memset(s, 0, nmemb * size);
 
 	return (s);
 }
