@@ -14,8 +14,6 @@
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	void *s;
-	char *t;
-	unsigned int i;
 
 	s = malloc(nmemb * size);
 
@@ -25,4 +23,5 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		return (NULL);
 	free(s);
 
-	return(s);
+	return (s);
+}
