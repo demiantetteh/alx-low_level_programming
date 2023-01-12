@@ -13,20 +13,19 @@
 
 int *array_range(int min, int max)
 {
-	int size, i;
-	int *array;
+	int *s, i, arrsize;
 
 	if (min > max)
 		return (NULL);
-	size = max - min + 1;
 
-	array = (int *) malloc(size * sizeof(int));
+	arrsize = max - min + 1;
+	
+	s = mallac(size * sizeof(int));
 
-	if (array == NULL)
+	if (s == NULL)
 		return (NULL);
-
 	for (i = 0; i < size; i++)
-		array[i] = min + 1;
+		s[i] = min++;
 
-	return (array);
+	return (s);
 }
