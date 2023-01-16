@@ -12,6 +12,9 @@
  * @name: Name of the dog
  * @age: Age of the dog
  * @owner: Owner of the dog
+ *
+ * Description: this strict makes all the members available to
+ * gather info on different types of dogs.
  */
 
 struct dog
@@ -22,7 +25,7 @@ struct dog
 };
 
 /**
- * dog_t - Typedef for struct dog as required
+ * dog_t - Typedef for struct dog
  */
 
 typedef struct dog dog_t;
