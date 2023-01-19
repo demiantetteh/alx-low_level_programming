@@ -28,7 +28,7 @@ int main(int argc, char *argv[])
 		exit(2);
 	}
 
-	main_ptr = (char *)main;
+	main_ptr = (char*)(void*)(&main);
 	for (i = 0; i < n; i++)
 		printf("%02x ", (unsigned char)*(main_ptr + i));
 	printf("\n");
