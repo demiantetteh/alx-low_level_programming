@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
 	int i, n;
 	char *main_ptr;
 
-	if (aargc != 2)
+	if (argc != 2)
 	{
 		printf("Error\n");
 		exit(1);
