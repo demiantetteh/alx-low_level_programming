@@ -28,11 +28,10 @@ int main(void)
 			putchar((j % 10) + '0');
 
 			/*print comma and space if not last combination*/
-			if (i != 99 || j != 99)
-			{
-				putchar(',');
-				putchar(' ');
-			}
+			if (i == 98 && j == 99)
+				continue;
+			putchar(',');
+			putchar(' ');
 		}
 	}
 
